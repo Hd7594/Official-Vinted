@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
   res.json("Bienvenue sur l'API Vinted de HD7594");
 });
 
+app.get("/new", (req, res) => {
+  res.json({ message: "Une autre partie de cet API" });
+});
+
 app.listen(process.env.PORT, (req, res) => {
   console.log("server has started");
 });
